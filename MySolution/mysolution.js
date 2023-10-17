@@ -68,10 +68,9 @@
             if (commonDifference2 !== commonDifference) {
                 var newDifference = commonDifference2 - commonDifference;
 
-                // One of the Limitations to this is that I didn't use a quadratic time complexity 
-                // so if you type something like 2 4 6 8 16, it'll still print out 2
+                // One of the Limitations to this is that I didn't check the loop till the end
+                // so if you type something like 2 4 6 8 14, it'll still print out 2
                 // because I only checked the first few numbers
-                // too time consuming that's why
 
                 // Check all sorts of solution if sequences is complexed
                 if (commonDifference * 2 === commonDifference2) {
